@@ -1,6 +1,5 @@
-use std::io;
 use rand::Rng;
-use std::cmp::Ordering;
+use std::io;
 
 fn main() {
     // println!("Guess the number!");
@@ -19,7 +18,7 @@ fn main() {
     // let guess: u32 = guess.trim().parse().expect("Please type a number!");
 
     // match guess.cmp(&secret_number) {
-    //     Ordering::Less => println!("Too small!"), 
+    //     Ordering::Less => println!("Too small!"),
     //     Ordering::Greater  => println!("Too big!"),
     //     Ordering::Equal => println!("You win!"),
     // }
@@ -36,7 +35,7 @@ fn main() {
     // let a : [i32;6] = [20,30,40,50,60,70];
     // println!("{}", a );
 
-    let a = [1,2,3,4,5,6];
+    let a = [1, 2, 3, 4, 5, 6];
 
     println!("Please enter an array index.");
 
@@ -53,12 +52,12 @@ fn main() {
 
     let element = a[index];
 
-    println!("THe value of the element at index {index} is   {element}" );
+    println!("THe value of the element at index {index} is   {element}");
 
     let y = plus_one(5);
     println!("THe value of the element at index {y} is")
 }
 
-fn plus_one(x:i32) -> i32 {
-    x+1
+fn plus_one(x: i32) -> i32 {
+    x + 1
 }
